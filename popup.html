@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Page Turner</title>
+    <style>
+    body{
+    	width: 300px;
+    	height:190px;
+      	overflow: hidden;
+      	background: white;
+    }
+	p{
+		cursor: text;
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		margin-left: 5px;
+		color:#E00259;
+	}
+	div.box{	
+		width: 300px;
+		border: 5px solid #ACC319;
+		border-radius:25px;
+		
+		position: absolute;
+    	left: 50%;
+    	margin-left: -155px;
+    	background: white;
+	}
+    </style>
+    <script src="keyaction.js"></script>
+    <script>
+    	function saveSettings(){
+    		alert(test);
+    	}
+    </script>
+  </head>
+
+	<body>
+		<div class="box">
+			<p>Usage:</p>
+			<p>If you want to read next page, click right arrow('->').</p>
+			<p>If you want to read previous page, click left arrow('<-').</p>
+		</div>
+  </body>
+</html>
